@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | FPSproject</title>
+    <title>FPSproject by DH</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+    If it doesn't load, try another browser. (ex. safari, edge)
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
@@ -17,22 +18,20 @@
         </div>
       </div>
       <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">FPSproject</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/web.loader.js";
+      var loaderUrl = buildUrl + "/html.loader.js";
       var config = {
-        dataUrl: buildUrl + "/web.data.unityweb",
-        frameworkUrl: buildUrl + "/web.framework.js.unityweb",
-        codeUrl: buildUrl + "/web.wasm.unityweb",
+        dataUrl: buildUrl + "/html.data",
+        frameworkUrl: buildUrl + "/html.framework.js",
+        codeUrl: buildUrl + "/html.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "FPSproject",
-        productVersion: "0.5",
+        productVersion: "0.6",
       };
 
       var container = document.querySelector("#unity-container");
